@@ -54,9 +54,15 @@ function getCicleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-    // return +(isNaN(value1.toFixed(1)) + isNaN(value2.toFixed(1))) / 2
-    //    return (+value1.toFixed(1) + +value2.toFixed(1)) / 2;
+
+    throw new Error('Not implemented');
+
 }
+
+//return ((Number(value1.toFixed(1)) + Number(value2.toFixed(1))) / 2);
+// return +(isNaN(value1.toFixed(1)) + isNaN(value2.toFixed(1))) / 2
+// return (+value1.toFixed(1) + +value2.toFixed(1)) / 2;
+
 
 /**
  * Returns a distance beetween two points by cartesian coordinates.
