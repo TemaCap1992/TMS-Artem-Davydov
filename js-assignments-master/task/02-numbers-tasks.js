@@ -54,7 +54,8 @@ function getCicleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-    throw new Error('Not implemented');
+    // return +(isNaN(value1.toFixed(1)) + isNaN(value2.toFixed(1))) / 2
+    //    return (+value1.toFixed(1) + +value2.toFixed(1)) / 2;
 }
 
 /**
@@ -73,8 +74,16 @@ function getAverage(value1, value2) {
  *   (-5,0) (10,-10) => 18.027756377319946
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
-    throw new Error('Not implemented');
+    var a = x1 - x2;
+    var b = y1 - y2;
+
+    var c = Math.sqrt(a * a + b * b);
+    return c;
+
 }
+
+
+
 
 /**
  * Returns a root of linear equation a*x + b = 0 given by coefficients a and b.
