@@ -38,13 +38,12 @@ function findElement(arr, value) {
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
 function generateOdds(len) {
-   throw new Error('Not implemented');
-   // var Arr = [1];
 
-   // for (var i = 0; i < len; i + 2) {
-   //    Arr.push(len);
-   // }
-   // return Arr;
+   function iter(n, current, acc) {
+      if (n == len) return acc;
+      return iter(n + 1, current + 2, acc.concat(current))
+   }
+   return iter(0, 1, []);
 }
 
 
