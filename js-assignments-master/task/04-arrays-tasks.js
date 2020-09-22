@@ -60,7 +60,10 @@ function generateOdds(len) {
  *    [] => [] 
  */
 function doubleArray(arr) {
-   throw new Error('Not implemented');
+   arr.map(function (item) {
+      arr.push(item)
+   })
+   return arr;
 }
 
 
