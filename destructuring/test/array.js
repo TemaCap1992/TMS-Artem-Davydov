@@ -18,21 +18,21 @@ describe('Destructuring arrays makes shorter code', () => {
   it('leading commas', () => {
     const all = ['ax', 'why', 'zet'];
     const [, z] = all;
-    return (z, 'zet');
+    assert(z, 'zet');
   });
   it('extract from nested arrays', () => {
     const user = [['Some', 'One'], 23];
     const [firstName, surname, age] = user;
     const expected = 'Some One = 23 years';
-    return toString(`${firstName} ${surname} = ${age} years`, expected);
+    assert.toString(`${firstName} ${surname} = ${age} years`, expected);
   });
   it('chained assignments', () => {
     let c, d;
     let a, b = [c, d] = [1, 2];
-    return ([a, b, c, d], [1, 2, 1, 2]);
+    assert([a, b, c, d], [1, 2, 1, 2]);
   });
   it('in for-of loop', () => {
     for (var [a, b] of [[0, 1, 2]]) { }
-    return ([a, b], [1, 2]);
+    assert[a, b] = [1, 2];
   });
 });
