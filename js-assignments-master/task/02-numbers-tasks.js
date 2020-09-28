@@ -22,7 +22,7 @@
  *   5, 5  => 25
  */
 function getRectangleArea(width, height) {
-    throw new Error('Not implemented');
+    return width * height;
 }
 
 
@@ -38,7 +38,7 @@ function getRectangleArea(width, height) {
  *   0    => 0
  */
 function getCicleCircumference(radius) {
-    throw new Error('Not implemented');
+    return radius * 2 * Math.PI;
 }
 
 /**
@@ -54,8 +54,15 @@ function getCicleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
+
     throw new Error('Not implemented');
+
 }
+
+//return ((Number(value1.toFixed(1)) + Number(value2.toFixed(1))) / 2);
+// return +(isNaN(value1.toFixed(1)) + isNaN(value2.toFixed(1))) / 2
+// return (+value1.toFixed(1) + +value2.toFixed(1)) / 2;
+
 
 /**
  * Returns a distance beetween two points by cartesian coordinates.
@@ -73,8 +80,16 @@ function getAverage(value1, value2) {
  *   (-5,0) (10,-10) => 18.027756377319946
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
-    throw new Error('Not implemented');
+    var a = x1 - x2;
+    var b = y1 - y2;
+
+    var c = Math.sqrt(a * a + b * b);
+    return c;
+
 }
+
+
+
 
 /**
  * Returns a root of linear equation a*x + b = 0 given by coefficients a and b.
@@ -159,7 +174,7 @@ function parseNumberFromString(value) {
  *   3,3,3   => 5.196152422706632
  *   1,2,3   => 3.741657386773941
  */
-function getParallelipidedDiagonal(a,b,c) {
+function getParallelipidedDiagonal(a, b, c) {
     throw new Error('Not implemented');
 }
 
