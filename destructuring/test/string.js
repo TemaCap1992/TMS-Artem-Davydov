@@ -6,18 +6,18 @@ var assert = require('assert');
 
 describe('Destructuring also works on strings', () => {
   it('destructure every character, just as if the string was an array', () => {
-    let a, b, c = 'abc';
-    return ([a, b, c], ['a', 'b', 'c']);
+    let x = 'abc';
+    [a, b, c] = x.split('');
     assert.deepEqual([a, b, c], ['a', 'b', 'c']);
   });
   it('missing characters are undefined', () => {
-    const [a, c] = 'ab';
-    return (c, void 0);
+    let d = 'ab';
+    [a, b, c] = d.split('')
     assert.equal(c, void 0);
   });
   it('unicode character work too', () => {
-    const [space, coffee] = 'a ☕';
-    return (coffee, '\u{2615}');
+    let i = 'a ☕';
+    [space, coffee] = i.split(' ');
     assert.equal(coffee, '\u{2615}');
   });
 });
