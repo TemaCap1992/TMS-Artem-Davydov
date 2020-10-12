@@ -49,5 +49,3 @@ clear.onclick = function () {
     map.clear()
     renderTableRow()
 }
-
-
